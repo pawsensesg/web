@@ -8,4 +8,4 @@ support.js        runtime it loads
 assets/           logo + product photography
 ```
 
-Deploy: import the repo in Vercel, framework preset **Other**, leave build command and output directory empty.
+Deploy: import the repo in Vercel, framework preset **Other**, leave build command and output directory empty
