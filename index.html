@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PawSense — Nourish their best life</title>
+<title>PawSense - Nourish their best life</title>
 <meta name="description" content="Slow-boiled chicken essence for cats and dogs. Zero additives. Free Singapore delivery over S$79.">
 <link rel="icon" href="assets/logo-mark.png">
 <script src="./support.js"></script>
@@ -22,6 +22,15 @@
   a:hover { color: #171C24; }
   img { display: block; max-width: 100%; }
   @keyframes riseIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  .hamburger-btn { display: none; background: none; border: none; cursor: pointer; padding: 8px; font-size: 24px; color: #171C24; margin-left: auto; }
+  @media (max-width: 768px) {
+    .hamburger-btn { display: block; }
+    header nav { display: none !important; position: absolute; top: 100%; left: 0; right: 0; background: rgba(251,249,245,0.98); backdrop-filter: blur(10px); border-bottom: 1px solid #E8E1D5; flex-direction: column; gap: 0; padding: 16px 24px; z-index: 10; }
+    header nav.mobile-open { display: flex !important; }
+    header nav a { padding: 12px 0; border-bottom: 1px solid #E8E1D5; }
+    header > div { flex-wrap: wrap; }
+    header a[style*="background: #B5862B"] { margin-left: auto; }
+  }
 </style>
 </helmet>
 
@@ -35,8 +44,8 @@
       <img src="assets/logo-mark.png" alt="PawSense" style="width: 42px; height: 42px; object-fit: contain; mix-blend-mode: multiply;" />
       <span style="font-family: Jost, Helvetica, sans-serif; font-weight: 500; font-size: 19px; letter-spacing: 0.3em; color: #171C24;">PAWSENSE</span>
     </a>
+    <button type="button" class="hamburger-btn" id="menu-toggle">☰</button>
     <nav style="display: flex; flex-wrap: wrap; gap: 26px; margin-left: auto; font-family: Jost, Helvetica, sans-serif; font-size: 14px; letter-spacing: 0.1em; text-transform: uppercase;">
-      <a href="#range" style="color: #171C24;" style-hover="{&quot;color&quot;:&quot;#8E6A21&quot;}">Shop</a>
       <a href="#why" style="color: #171C24;" style-hover="{&quot;color&quot;:&quot;#8E6A21&quot;}">Why</a>
       <a href="#serve" style="color: #171C24;" style-hover="{&quot;color&quot;:&quot;#8E6A21&quot;}">How to serve</a>
       <a href="#faq" style="color: #171C24;" style-hover="{&quot;color&quot;:&quot;#8E6A21&quot;}">FAQ</a>
@@ -48,7 +57,7 @@
 <section id="top" style="max-width: 1180px; margin: 0 auto; padding: 72px 24px 64px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 56px; align-items: center;">
   <div style="animation: riseIn 0.7s ease both;">
     <p style="margin: 0 0 22px; font-family: Jost, Helvetica, sans-serif; font-size: 13px; letter-spacing: 0.24em; text-transform: uppercase; color: #8E6A21;">Slow-boiled chicken essence</p>
-    <h1 style="margin: 0 0 22px; font-family: Jost, Helvetica, sans-serif; font-weight: 300; font-size: clamp(38px, 6vw, 62px); line-height: 1.06; letter-spacing: -0.015em; color: #171C24; text-wrap: pretty;">Nourish their<br />best life — one<br />spoonful a day.</h1>
+    <h1 style="margin: 0 0 22px; font-family: Jost, Helvetica, sans-serif; font-weight: 300; font-size: clamp(38px, 6vw, 62px); line-height: 1.06; letter-spacing: -0.015em; color: #171C24; text-wrap: pretty;">Nourish their<br />best life - one<br />spoonful a day.</h1>
     <p style="margin: 0 0 32px; max-width: 46ch; font-size: 17px; line-height: 1.65; color: #4A4F58; text-wrap: pretty;">A concentrated, zero-additive broth rich in protein, amino acids and minerals. Made for growing puppies and kittens, pets recovering from surgery, and seniors who need gentle support.</p>
     <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 38px;">
       <a href="#range" style="background: #171C24; color: #FBF9F5; font-family: Jost, Helvetica, sans-serif; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; padding: 16px 30px; border-radius: 2px;" style-hover="{&quot;background&quot;:&quot;#B5862B&quot;}">Shop the range</a>
@@ -72,7 +81,7 @@
   <div style="display: grid; gap: 16px;">
     <img src="assets/with-dog.webp" alt="Toy poodle beside a box of Cordyceps chicken essence and loose sachets" style="width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border: 1px solid #E8E1D5; border-radius: 3px;" />
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-      <img src="assets/pouring.jpeg" alt="Chicken essence poured from a sachet into a ceramic bowl" style="width: 100%; aspect-ratio: 1; object-fit: cover; border: 1px solid #E8E1D5; border-radius: 3px;" />
+      <img src="assets/with-black-cat.webp" alt="Chicken essence poured from a sachet into a ceramic bowl" style="width: 100%; aspect-ratio: 1; object-fit: cover; border: 1px solid #E8E1D5; border-radius: 3px;" />
       <img src="assets/with-cat.webp" alt="Cat resting beside Cordyceps chicken essence sachets" style="width: 100%; aspect-ratio: 1; object-fit: cover; border: 1px solid #E8E1D5; border-radius: 3px;" />
     </div>
   </div>
@@ -129,7 +138,7 @@
       <img src="assets/cordyceps.webp" alt="Original and Cordyceps boxes with reishi, cordyceps, chicken and goji berries" style="width: 100%; aspect-ratio: 16 / 11; object-fit: cover;" />
       <div style="padding: 26px;">
         <h3 style="margin: 0 0 8px; font-family: Jost, Helvetica, sans-serif; font-weight: 400; font-size: 24px;">Cordyceps sinensis</h3>
-        <p style="margin: 0 0 18px; font-size: 15px; line-height: 1.62; color: #4A4F58;">Chicken essence with cordyceps — for before and after sterilisation surgery, and rebuilding strength in old age.</p>
+        <p style="margin: 0 0 18px; font-size: 15px; line-height: 1.62; color: #4A4F58;">Chicken essence with cordyceps - for before and after sterilisation surgery, and rebuilding strength in old age.</p>
         <p style="margin: 0; font-family: Jost, Helvetica, sans-serif; font-size: 18px; color: #8E6A21;">From S$57 <span style="font-size: 14px; color: #6B7078;">/ box of 10</span></p>
       </div>
     </div>
@@ -158,14 +167,14 @@
 
 <section id="serve" style="max-width: 1180px; margin: 0 auto; padding: 84px 24px;">
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 56px; align-items: center;">
-    <img src="assets/duo-ingredients.webp" alt="Single box of Original chicken essence, 30ml sachets, ten per box" style="width: 100%; aspect-ratio: 5 / 4; object-fit: contain; background: #FFFDF9; padding: 18px; border: 1px solid #E8E1D5; border-radius: 3px;" />
+    <img src="assets/pouring.jpeg" alt="Single box of Original chicken essence, 30ml sachets, ten per box" style="width: 100%; aspect-ratio: 5 / 4; object-fit: contain; background: #FFFDF9; padding: 18px; border: 1px solid #E8E1D5; border-radius: 3px;" />
     <div>
       <p style="margin: 0 0 14px; font-family: Jost, Helvetica, sans-serif; font-size: 13px; letter-spacing: 0.24em; text-transform: uppercase; color: #8E6A21;">How to serve</p>
       <h2 style="margin: 0 0 32px; font-family: Jost, Helvetica, sans-serif; font-weight: 300; font-size: clamp(28px, 3.6vw, 40px); line-height: 1.12;">Three steps, thirty seconds</h2>
       <div style="display: grid; gap: 22px;">
         <div style="display: grid; grid-template-columns: 40px 1fr; gap: 18px; align-items: start;">
           <span style="font-family: Jost, Helvetica, sans-serif; font-size: 15px; letter-spacing: 0.1em; color: #8E6A21; border-top: 1px solid #C9BFAC; padding-top: 8px;">01</span>
-          <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A4F58;"><strong style="color: #171C24; font-weight: 600;">Warm the sachet.</strong> Stand it in hot water for two minutes — never microwave.</p>
+          <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #4A4F58;"><strong style="color: #171C24; font-weight: 600;">Warm the sachet.</strong> Stand it in hot water for two minutes - never microwave.</p>
         </div>
         <div style="display: grid; grid-template-columns: 40px 1fr; gap: 18px; align-items: start;">
           <span style="font-family: Jost, Helvetica, sans-serif; font-size: 15px; letter-spacing: 0.1em; color: #8E6A21; border-top: 1px solid #C9BFAC; padding-top: 8px;">02</span>
@@ -186,7 +195,7 @@
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
       <figure style="margin: 0; background: #FBF9F5; border: 1px solid #E3DACA; border-radius: 3px; padding: 28px;">
         <p style="margin: 0 0 14px; font-family: Jost, Helvetica, sans-serif; font-size: 15px; letter-spacing: 0.25em; color: #B5862B;">★★★★★</p>
-        <blockquote style="margin: 0 0 18px; font-size: 16px; line-height: 1.6; color: #171C24;">"Two weeks after her spay op she was barely eating. She finishes the bowl now — and drinks more too."</blockquote>
+        <blockquote style="margin: 0 0 18px; font-size: 16px; line-height: 1.6; color: #171C24;">"Two weeks after her spay op she was barely eating. She finishes the bowl now - and drinks more too."</blockquote>
         <figcaption style="font-size: 14px; letter-spacing: 0.06em; color: #6B7078;">Karen W. · cat, 6 yrs</figcaption>
       </figure>
       <figure style="margin: 0; background: #FBF9F5; border: 1px solid #E3DACA; border-radius: 3px; padding: 28px;">
@@ -208,7 +217,7 @@
     <div>
       <p style="margin: 0 0 14px; font-family: Jost, Helvetica, sans-serif; font-size: 13px; letter-spacing: 0.24em; text-transform: uppercase; color: #D9B463;">New here?</p>
       <h2 style="margin: 0 0 14px; font-family: Jost, Helvetica, sans-serif; font-weight: 300; font-size: clamp(28px, 3.4vw, 38px); line-height: 1.12; color: #FBF9F5;">Try it for S$6 before you commit</h2>
-      <p style="margin: 0; font-size: 16px; line-height: 1.62; color: #B9BEC6; max-width: 44ch;">A two-sachet tasting pack — one Original, one Cordyceps. Free shipping on your first member order.</p>
+      <p style="margin: 0; font-size: 16px; line-height: 1.62; color: #B9BEC6; max-width: 44ch;">A two-sachet tasting pack - one Original, one Cordyceps. Free shipping on your first member order.</p>
     </div>
     <div style="display: flex; flex-wrap: wrap; gap: 14px; justify-content: flex-end;">
       <a href="#range" style="background: #B5862B; color: #FBF9F5; font-family: Jost, Helvetica, sans-serif; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; padding: 16px 30px; border-radius: 2px;" style-hover="{&quot;background&quot;:&quot;#FBF9F5&quot;,&quot;color&quot;:&quot;#171C24&quot;}">Get the tasting pack</a>
@@ -301,8 +310,8 @@ class Component extends DCLogic {
   faqData() {
     return [
       { q: "What age can they start?", a: "From weaning onwards. Puppies and kittens do well on half a sachet a day; pregnant and nursing mothers can take a full one." },
-      { q: "Is there any salt, oil or preservative?", a: "No. Each sachet is chicken, water and — in the Cordyceps recipe — cordyceps sinensis. Nothing is added for flavour or shelf life." },
-      { q: "Original or Cordyceps — which one?", a: "Original is the everyday choice. Cordyceps is aimed at pets before and after sterilisation surgery, during recovery, or from around eight years old." },
+      { q: "Is there any salt, oil or preservative?", a: "No. Each sachet is chicken, water and - in the Cordyceps recipe - cordyceps sinensis. Nothing is added for flavour or shelf life." },
+      { q: "Original or Cordyceps - which one?", a: "Original is the everyday choice. Cordyceps is aimed at pets before and after sterilisation surgery, during recovery, or from around eight years old." },
       { q: "How do I store it?", a: "Room temperature, out of direct sun, until opened. Once opened, serve straight away or refrigerate and use within 24 hours." },
       { q: "When does my order arrive?", a: "Orders placed before 3pm ship the same working day. Local delivery takes 1–2 working days and is free over S$79; below that a flat S$8 courier fee applies." }
     ];
@@ -355,6 +364,13 @@ class Component extends DCLogic {
     };
   }
 }
+</script>
+<script>
+document.addEventListener('click', function(e) {
+  if (e.target.closest('#menu-toggle')) {
+    document.querySelector('header nav')?.classList.toggle('mobile-open');
+  }
+});
 </script>
 </body>
 </html>
